@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{289A1B02-9412-4A48-BA09-F59A13BDF719}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GestionStagiaires</RootNamespace>
+    <AssemblyName>GestionStagiaires</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.4.5.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa, Version=5.4.5.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra, Version=5.4.5.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\itextsharp.xtra.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AjouterEncadreur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterEncadreur.Designer.cs">
+      <DependentUpon>AjouterEncadreur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjouterStage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterStage.Designer.cs">
+      <DependentUpon>AjouterStage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjouterStagiaires.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterStagiaires.Designer.cs">
+      <DependentUpon>AjouterStagiaires.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjouterSujet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterSujet.Designer.cs">
+      <DependentUpon>AjouterSujet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authentification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentification.Designer.cs">
+      <DependentUpon>Authentification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetailSujet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailSujet.Designer.cs">
+      <DependentUpon>DetailSujet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Encadreurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Encadreurs.Designer.cs">
+      <DependentUpon>Encadreurs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Principal.Designer.cs">
+      <DependentUpon>Menu Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificationEncadreurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificationEncadreurs.Designer.cs">
+      <DependentUpon>ModificationEncadreurs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificationStages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificationStages.Designer.cs">
+      <DependentUpon>ModificationStages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificationStagiaires.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificationStagiaires.Designer.cs">
+      <DependentUpon>ModificationStagiaires.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificationSujets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificationSujets.Designer.cs">
+      <DependentUpon>ModificationSujets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AjouterEncadreur.resx">
+      <DependentUpon>AjouterEncadreur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjouterStage.resx">
+      <DependentUpon>AjouterStage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjouterStagiaires.resx">
+      <DependentUpon>AjouterStagiaires.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjouterSujet.resx">
+      <DependentUpon>AjouterSujet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authentification.resx">
+      <DependentUpon>Authentification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailSujet.resx">
+      <DependentUpon>DetailSujet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Encadreurs.resx">
+      <DependentUpon>Encadreurs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Principal.resx">
+      <DependentUpon>Menu Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificationEncadreurs.resx">
+      <DependentUpon>ModificationEncadreurs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificationStages.resx">
+      <DependentUpon>ModificationStages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificationStagiaires.resx">
+      <DependentUpon>ModificationStagiaires.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificationSujets.resx">
+      <DependentUpon>ModificationSujets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stages.resx">
+      <DependentUpon>Stages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stagiaires.resx">
+      <DependentUpon>Stagiaires.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sujets.resx">
+      <DependentUpon>Sujets.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Stages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stages.Designer.cs">
+      <DependentUpon>Stages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stagiaires.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stagiaires.Designer.cs">
+      <DependentUpon>Stagiaires.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sujets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sujets.Designer.cs">
+      <DependentUpon>Sujets.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
